@@ -1,7 +1,10 @@
-name: GitHub Actions Demo
-on: [push]
+name: Auto-merge releas branches
+on: 
+  push:
+    branches:
+      - release-*
 jobs:
-  Explore-GitHub-Actions:
+  Try-Auto-Merge:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
