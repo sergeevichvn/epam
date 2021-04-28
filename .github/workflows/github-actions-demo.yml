@@ -12,7 +12,7 @@ jobs:
       - name: Nightly Merge
         uses: sergeevichvn/gh-action-nightly-merge@v1.3.2-beta
         with:
-          stable_branch: ${GITHUB_REF##*/}
+          stable_branch: ${{ GITHUB_REF##*/ }}
           allow_ff: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
