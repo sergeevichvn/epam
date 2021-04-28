@@ -10,6 +10,6 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v1
       - name: Nightly Merge
-        uses: sergeevichvn/gh-action-nightly-merge@v1.3.2-beta-12
+        uses: sergeevichvn/gh-action-nightly-merge@v1.3.2-beta-13
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
