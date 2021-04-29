@@ -7,8 +7,6 @@ jobs:
   auto-merge-rc-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v1
       - name: Nightly Merge
         uses: sergeevichvn/gh-action-nightly-merge@v1.3.2-beta-15
         env:
